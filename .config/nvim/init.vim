@@ -47,7 +47,6 @@ set shiftwidth=2
 set expandtab
 set autochdir
 
-
 " CTRL+S Save
 " imap <C-s> <ESC>:w<CR>a
 if exists('+termguicolors')
