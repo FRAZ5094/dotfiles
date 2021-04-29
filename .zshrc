@@ -2,6 +2,7 @@
 # Initialization code that may require console input (password prompts, [y/n]
 
 neofetch
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/fraser/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
@@ -23,6 +24,7 @@ source $(dirname $(gem which colorls))/tab_complete.sh
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
+
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -102,7 +104,10 @@ sudo
 history
 catimg
 zsh-syntax-highlighting
+vi-mode
 )
+
+VI_MODE_SET_CURSOR=true
 
 source $ZSH/oh-my-zsh.sh
 
