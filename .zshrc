@@ -108,6 +108,7 @@ vi-mode
 )
 
 VI_MODE_SET_CURSOR=true
+bindkey -M viins 'jk' vi-cmd-mode
 
 source $ZSH/oh-my-zsh.sh
 
@@ -139,7 +140,7 @@ alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias vim="nvim"
 alias vimconfig="nvim ~/.config/nvim/init.vim"
 export EDITOR="nvim"
-#alias ls="colorls"
+alias ls="colorls"
 chpwd() ls
 alias freq="conda activate base && python3 /media/fraser/HDD/github/Python-Programs/pandas/ChineseFreq/Chinese_Freq.py && conda deactivate"
 alias player="python3 /media/fraser/HDD/github/ChineseShare/Random_video/video.py"
