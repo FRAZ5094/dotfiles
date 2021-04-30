@@ -9,7 +9,7 @@ git clone --bare https://github.com/FRAZ5094/dotfiles $HOME/dotfiles
 ```
 mkdir -p $HOME/.config-backup && config checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | xargs -I{} mv {} .config-backup/{}
 ```
-## Install zsh, oh-my-zsh and p10k
+### Install zsh, oh-my-zsh and p10k
 ```
 sudo apt-get install zsh -y
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
