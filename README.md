@@ -30,6 +30,8 @@ config config --local status.showUntrackedFiles no
 ```
 ### Missing stuff
 ```
+tmux source ~/.tmux.conf
+shift b + I
 sudo apt-get install ruby-full
 gem install colorls
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
