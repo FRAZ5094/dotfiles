@@ -30,8 +30,10 @@ config config --local status.showUntrackedFiles no
 ```
 ### Missing stuff
 ```
+sudo apt-get install ruby-full
+gem install colorls
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
-
+git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 ```
 
 ## Do stuff
