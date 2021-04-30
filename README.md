@@ -32,5 +32,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 ### add to ~/.zshrc:
 ```
 ZSH_THEME='powerlevel10k/powerlevel10k'
+```
+```
 p10k configure
 ```
