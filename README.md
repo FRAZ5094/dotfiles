@@ -28,6 +28,11 @@ echo "alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'" >
 config checkout
 config config --local status.showUntrackedFiles no
 ```
+### Missing stuff
+```
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+
+```
 
 ## Do stuff
 ```
