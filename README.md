@@ -1,13 +1,13 @@
 # dotfiles
 ## Install
 ```
-echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $HOME/.bashrc
+echo "alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'" >> $HOME/.bashrc
 mkdir -p ~/dotfiles
 git clone --bare https://github.com/FRAZ5094/dotfiles $HOME/dotfiles
 ```
 ### Backup (optional)
 ```
-mkdir -p $HOME/.config-backup && config checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | xargs -I{} mv {} $HOME.config-backup/{}
+mkdir -p .config-backup && config checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | xargs -I{} mv {} .config-backup/{}
 ```
 ### Install zsh, oh-my-zsh and p10k
 ```
@@ -22,6 +22,7 @@ ZSH_THEME='powerlevel10k/powerlevel10k'
 ```
 ```
 p10k configure
+echo "alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'" >> $HOME/.zshrc
 ```
 ```
 config checkout
@@ -34,5 +35,6 @@ config status
 config diff
 config add /path/to/file
 config commit -a
+config push
 ```
 
