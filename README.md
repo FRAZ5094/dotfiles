@@ -26,4 +26,8 @@ config commit -a
 sudo apt-get install zsh -y
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 sudo apt-get install fonts-hack-ttf -y
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+add to ~/.zshrc
+ZSH_THEME='powerlevel10k/powerlevel10k'
+p10k configure
 ```
