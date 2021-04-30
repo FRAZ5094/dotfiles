@@ -34,6 +34,7 @@ source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/plug-config/NERDTree.vim
 source $HOME/.config/nvim/plug-config/NERDCommenter.vim
 source $HOME/.config/nvim/plug-config/ctrlp.vim
+source $HOME/.config/nvim/plug-config/startify.vim
 
 inoremap jk <Esc>
 map <BS> <Nop>
