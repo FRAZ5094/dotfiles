@@ -26,7 +26,6 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'ryanoasis/vim-devicons'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mhinz/vim-startify'
-
 call plug#end()
 
 source $HOME/.config/nvim/themes/onedark.vim
@@ -37,7 +36,16 @@ source $HOME/.config/nvim/plug-config/NERDCommenter.vim
 source $HOME/.config/nvim/plug-config/ctrlp.vim
 
 inoremap jk <Esc>
-
+map <BS> <Nop>
+imap <BS> <Nop>
+map <Left> <Nop>
+imap <Left> <Nop>
+map <Right> <Nop>
+imap <Right> <Nop>
+map <Up> <Nop>
+imap <Up> <Nop>
+map <Down> <Nop>
+imap <Down> <Nop>
 
 set relativenumber
 set smarttab
