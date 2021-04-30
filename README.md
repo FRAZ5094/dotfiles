@@ -21,3 +21,9 @@ config diff
 config add /path/to/file
 config commit -a
 ```
+## Install zsh, oh-my-zsh and p10k
+```
+sudo apt-get install zsh -y
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sudo apt-get install fonts-hack-ttf -y
+```
