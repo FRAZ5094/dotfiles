@@ -1,6 +1,10 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  exec tmux
+fi
+
 neofetch
 
 # >>> conda initialize >>>
@@ -118,6 +122,7 @@ source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 export LC_ALL="en_US.UTF-8"
+
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
