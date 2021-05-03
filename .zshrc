@@ -1,12 +1,7 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-  exec tmux
-fi
-
 neofetch
-
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/fraser/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
@@ -28,7 +23,6 @@ source $(dirname $(gem which colorls))/tab_complete.sh
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
-
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -151,6 +145,8 @@ alias freq="conda activate base && python3 /media/fraser/HDD/github/Python-Progr
 alias player="python3 /media/fraser/HDD/github/ChineseShare/Random_video/video.py"
 alias listening="firefox 'https://www.purpleculture.net/chinese-english-dictionary/' 'https://www.pin1yin1.com/' 'https://translate.google.co.uk/?sl=zh-CN&tl=en&op=translate' 'https://resources.allsetlearning.com/chinese/grammar/' & disown && konsole & disown && code /media/fraser/HDD/github/ChineseShare/Chinese_workspace.code-workspace & disown && python3 /media/fraser/HDD/github/ChineseShare/HomeWithFamily/Player.py"
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+alias docker='sudo docker'
+alias tmuxn='tmux new-session -s $1'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 

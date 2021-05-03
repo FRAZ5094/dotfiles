@@ -37,6 +37,9 @@ source $HOME/.config/nvim/plug-config/ctrlp.vim
 source $HOME/.config/nvim/plug-config/startify.vim
 
 inoremap jk <Esc>
+noremap <A-p> "+p
+vnoremap <A-p> "+p
+vnoremap <A-y> "+y
 map <BS> <Nop>
 imap <BS> <Nop>
 map <Left> <Nop>
