@@ -11,7 +11,6 @@ let g:coc_global_extensions=[
       \]
 
 call plug#begin('~/.config/nvim/plugged')
-
 Plug 'dense-analysis/ale'
 Plug 'morhetz/gruvbox'
 Plug 'joshdick/onedark.vim'
@@ -26,6 +25,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'ryanoasis/vim-devicons'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mhinz/vim-startify'
+
 call plug#end()
 
 source $HOME/.config/nvim/themes/onedark.vim
@@ -40,18 +40,18 @@ inoremap jk <Esc>
 noremap <A-p> "+p
 vnoremap <A-p> "+p
 vnoremap <A-y> "+y
-map <BS> <Nop>
-imap <BS> <Nop>
+"map <BS> <Nop>
+"imap <BS> <Nop>
 map <Left> <Nop>
 imap <Left> <Nop>
 map <Right> <Nop>
 imap <Right> <Nop>
-map <Up> <Nop>
+map<Up> <Nop>
 imap <Up> <Nop>
 map <Down> <Nop>
 imap <Down> <Nop>
 
-set relativenumber
+set number! relativenumber!
 set smarttab
 set cindent
 set tabstop=2

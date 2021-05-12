@@ -115,7 +115,6 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-export LC_ALL="en_US.UTF-8"
 
 
 # Preferred editor for local and remote sessions
@@ -152,3 +151,4 @@ alias tmuxn='tmux new-session -s $1'
 
 bindkey '^ ' autosuggest-accept
 export TERM=xterm-256color
+export LC_ALL="en_US.UTF-8"
