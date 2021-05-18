@@ -50,6 +50,12 @@ map<Up> <Nop>
 imap <Up> <Nop>
 map <Down> <Nop>
 imap <Down> <Nop>
+"splits
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
+nmap <C-h> <C-w>h
+nnoremap <c-z> <nop>
 
 set number! relativenumber!
 set smarttab
