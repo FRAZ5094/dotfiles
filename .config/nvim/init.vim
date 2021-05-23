@@ -11,6 +11,7 @@ let g:coc_global_extensions=[
       \]
 
 call plug#begin('~/.config/nvim/plugged')
+
 Plug 'dense-analysis/ale'
 Plug 'morhetz/gruvbox'
 Plug 'joshdick/onedark.vim'
@@ -25,6 +26,10 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'ryanoasis/vim-devicons'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mhinz/vim-startify'
+Plug 'yuezk/vim-js'
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'honza/vim-snippets'
 
 call plug#end()
 
@@ -56,6 +61,8 @@ nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 nmap <C-h> <C-w>h
 nnoremap <c-z> <nop>
+
+nnoremap gf <C-W>gf
 
 set number! relativenumber!
 set smarttab
