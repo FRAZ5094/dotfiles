@@ -10,6 +10,7 @@ let g:startify_bookmarks = [
             \ { 'z': '~/.zshrc' },
             \ { 'p': '/media/fraser/HDD/github/Python-Programs/' },
             \ { 'f': '~/Documents/linux_fan_control/fan_profile.json' },
+            \ { 'c': '~/github/ChineseShare/Random_video/*.txt' },
             \ ]
 
 let g:startify_session_dir = '~/.config/nvim/session'

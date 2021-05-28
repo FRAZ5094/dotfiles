@@ -7,7 +7,8 @@ let g:coc_global_extensions=[
       \'coc-vimlsp',
       \'coc-tsserver',
       \'coc-json',
-      \'coc-clangd'
+      \'coc-clangd',
+      \'coc-tailwind-intellisense'
       \]
 
 call plug#begin('~/.config/nvim/plugged')
@@ -30,7 +31,15 @@ Plug 'yuezk/vim-js'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'honza/vim-snippets'
-
+Plug 'alvan/vim-closetag'
+Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+Plug 'jparise/vim-graphql'
+Plug 'mattn/emmet-vim'
+Plug 'rodrigore/coc-tailwind-intellisense', {'do': 'npm install', 'for': ['javascript', 'css']}
+Plug 'iamcco/coc-tailwindcss',  {'do': 'yarn install --frozen-lockfile && yarn run build'}
 call plug#end()
 
 source $HOME/.config/nvim/themes/onedark.vim
@@ -64,6 +73,15 @@ nnoremap <c-z> <nop>
 
 nnoremap gf <C-W>gf
 
+map <PageDown> <Nop>
+imap <PageDown> <Nop>
+map <ins> <Nop>
+imap <ins> <Nop>
+map <end> <Nop>
+imap <end> <Nop>
+map <del> <Nop>
+imap <del> <Nop>
+
 set number! relativenumber!
 set smarttab
 set cindent
@@ -71,6 +89,8 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 set autochdir
+set spell spelllang=en_us
+set cursorline
 
 " CTRL+S Save
 " imap <C-s> <ESC>:w<CR>a
