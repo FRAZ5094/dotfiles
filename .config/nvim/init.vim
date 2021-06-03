@@ -40,6 +40,7 @@ Plug 'jparise/vim-graphql'
 Plug 'mattn/emmet-vim'
 Plug 'rodrigore/coc-tailwind-intellisense', {'do': 'npm install', 'for': ['javascript', 'css']}
 Plug 'iamcco/coc-tailwindcss',  {'do': 'yarn install --frozen-lockfile && yarn run build'}
+Plug 'unblevable/quick-scope'
 call plug#end()
 
 source $HOME/.config/nvim/themes/onedark.vim
