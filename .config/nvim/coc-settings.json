@@ -1,6 +1,6 @@
 {
   "suggest.noselect": false,
-  "coc.preferences.formatOnSaveFiletypes": ["*"],
+  "coc.preferences.formatOnSaveFiletypes": ["javascript","python","cpp","graphql","typescriptreact","yaml"],
   "clangd.path": "/home/fraser/.config/coc/extensions/coc-clangd-data/install/12.0.0/clangd_12.0.0/bin/clangd",
   "snippets.userSnippetsDirectory": "~/.config/nvim/snips",
   "tailwindCSS.cssLanguages": [

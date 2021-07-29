@@ -141,13 +141,14 @@ export EDITOR="nvim"
 alias ls="colorls"
 chpwd() ls
 alias freq="conda activate base && python3 /media/fraser/HDD/github/Python-Programs/pandas/ChineseFreq/Chinese_Freq.py && conda deactivate"
-alias player="python3 /media/fraser/HDD/github/ChineseShare/Random_video/video.py"
+alias player="python3 /media/fraser/HDD/github/ChineseShare/random_video/video.py"
 alias listening="firefox 'https://www.purpleculture.net/chinese-english-dictionary/' 'https://www.pin1yin1.com/' 'https://translate.google.co.uk/?sl=zh-CN&tl=en&op=translate' 'https://resources.allsetlearning.com/chinese/grammar/' & disown && konsole & disown && code /media/fraser/HDD/github/ChineseShare/Chinese_workspace.code-workspace & disown && python3 /media/fraser/HDD/github/ChineseShare/HomeWithFamily/Player.py"
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 #alias docker='sudo docker'
 alias tmuxn='tmux new-session -s $1'
 alias fanspeed="/home/fraser/github/bashscripts/fanspeed.sh $1" 
 alias monitor="watch -n 0.5 python3 /home/fraser/Documents/linux_fan_control/monitor.py"
+alias del_swap="sudo rm ~/.local/share/nvim/swap/*"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
