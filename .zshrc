@@ -146,9 +146,11 @@ alias listening="firefox 'https://www.purpleculture.net/chinese-english-dictiona
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 #alias docker='sudo docker'
 alias tmuxn='tmux new-session -s $1'
+alias tmuxconfig='vim ~/.tmux.conf'
 alias fanspeed="/home/fraser/github/bashscripts/fanspeed.sh $1" 
 alias monitor="watch -n 0.5 python3 /home/fraser/Documents/linux_fan_control/monitor.py"
 alias del_swap="sudo rm ~/.local/share/nvim/swap/*"
+alias cb="clipboard"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
