@@ -41,6 +41,8 @@ Plug 'mattn/emmet-vim'
 Plug 'rodrigore/coc-tailwind-intellisense', {'do': 'npm install', 'for': ['javascript', 'css']}
 Plug 'iamcco/coc-tailwindcss',  {'do': 'yarn install --frozen-lockfile && yarn run build'}
 Plug 'unblevable/quick-scope'
+Plug 'cwfoo/vim-text-omnicomplete', { 'do': 'make' }
+Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 
 call plug#end()
 

@@ -1,0 +1,35 @@
+snippet main "Python starting code" b
+
+def ${1:main}():
+	pass
+
+
+if __name__ == "__main__":
+	${1:main}()
+
+endsnippet
+
+snippet jsonr "Read from json file" b
+
+def read_${1:filename}():
+		with open("${1:filename}.json","r") as f:
+				return json.load(f)
+
+endsnippet
+
+snippet jsonw "Write to json file" b
+
+def write_${1:filename}(data):
+		with open("${1:filename}.json","w") as f:
+				json.dump(data,f, indent=4)
+
+endsnippet
+
+
+snippet selft "Template for self statements in __init__" b
+self.${1}=${1}
+endsnippet
+
+snippet pyplot "Imports matplotlib.pyplot as plt" b
+import matplotlib.pyplot as plt
+endsnippet
