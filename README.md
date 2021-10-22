@@ -46,4 +46,14 @@ config add /path/to/file
 config commit -a
 config push
 ```
+##Pinyin
+sudo pacman -Syu fcitx fcitx-googlepinyin fcitx-im fcitx-configtool
+vim /etc/environment
+paste:
+GTK_IM_MODULE=fcitx
+QT_IM_MODULE=fcitx
+XMODIFIERS=@im=fcitx
 
+git clone https://aur.archlinux.org/noto-fonts-sc.git
+cd noto-fonts-sc
+makepkg -si
