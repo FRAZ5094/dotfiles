@@ -58,4 +58,8 @@ XMODIFIERS=@im=fcitx
 git clone https://aur.archlinux.org/noto-fonts-sc.git
 cd noto-fonts-sc
 makepkg -si
+
+git clone https://aur.archlinux.org/fcitx-sogoupinyin.git
+cd fcitx-sougoupinyin
+makepkg -si
 ```
