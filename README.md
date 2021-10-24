@@ -49,15 +49,16 @@ config push
 ## Pinyin
 ```
 sudo pacman -Syu fcitx fcitx-googlepinyin fcitx-im fcitx-configtool
-vim /etc/environment
+sudo vim /etc/environment
 paste:
 GTK_IM_MODULE=fcitx
 QT_IM_MODULE=fcitx
 XMODIFIERS=@im=fcitx
 
-git clone https://aur.archlinux.org/noto-fonts-sc.git
+sudo yay -S noto-fots-sc
+(git clone https://aur.archlinux.org/noto-fonts-sc.git)
 cd noto-fonts-sc
-makepkg -si
+makepkg -si)
 
 git clone https://aur.archlinux.org/fcitx-sogoupinyin.git
 cd fcitx-sougoupinyin
