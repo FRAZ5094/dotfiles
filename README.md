@@ -64,3 +64,22 @@ git clone https://aur.archlinux.org/fcitx-sogoupinyin.git
 cd fcitx-sougoupinyin
 makepkg -si
 ```
+
+##Copy to clipboard from command line
+Install it with:
+
+```
+npm install -g clipboard-cli
+```
+
+Then you can do:
+
+```
+echo foo | clipboard 
+```
+
+If you want, you can alias to `cb` by putting the following in your `.bashrc`, `.bash_profile`, or `.zshrc`:
+
+```
+alias cb=clipboard
+```
